@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+        background-color: lightblue;
+      }
+      .vert {
+        padding-top: 30px;
+        padding-left: 220px;
+      }
+      .hor {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding-top: 100px;
+        padding-right: 140px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+      }
+      ul.vertical {
+        list-style-type: none;
+        padding-top: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 250px;
+        border: 1px solid black;
+        margin-left: 200px;
+      }
+      ul.vertical li {
+        font-size: xx-large;
+        padding: 10px;
+        background-color: lightblue;
+      }
+      ul.vertical li a {
+        display: block;
+        text-decoration: none;
+      }
+      ul.vertical li a:hover {
+        background-color: yellow;
+        color: white;
+      }
+
+      ul.horizontal {
+        border: 1px solid black;
+        list-style-type: none;
+        background-color: white;
+        overflow: hidden;
+        flex-grow: 1; /* Allow horizontal bar to take available space */
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-right: 200px;
+      }
+
+      ul.horizontal li {
+        font-size: x-large;
+        border-right: 1px solid blue;
+        float: left;
+        background-color: grey;
+      }
+
+      ul.horizontal li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: blue;
+      }
+
+      ul.horizontal li a:hover {
+        background-color: rgb(96, 93, 93);
+        color: white;
+      }
+
+      ul.horizontal li:last-child {
+        border-right: none; /* Remove the border on the last item */
+        flex-grow: 1;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS TASK2</h1>
+    <div class="container">
+      <div>
+        <h3 class="vert">Vertical navigation bar</h2>
+        <ul class="vertical">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="hor">Horizontal navigation bar</h2>
+        <ul class="horizontal">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

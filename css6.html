@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .user-icon {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .user-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .label-top-left {
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .remember-me-container {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .remember-me-label {
+            float: left;
+            margin-right: 5px;
+        }
+
+        .remember-me-checkbox {
+            float: left;
+        }
+
+        .cancel-button {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            clear: left;
+            display: block;
+        }
+
+        .forgot-password {
+            font-size: 12px;
+            float: right;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .urniv{
+            display: inline;
+            
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="user-icon">
+            <img src="prof.png" alt="Profile Picture">
+        </div>
+        <label for="username" class="label-top-left">Username</label>
+        <input type="text" class="input-box" placeholder="Enter username" id="username">
+        <label for="password" class="label-top-left">Password</label>
+        <input type="password" class="input-box" placeholder="Enter password" id="password">
+        <button class="login-button" type="button">Login</button>
+        <div class="remember-me-container">
+            <input type="checkbox" id="rememberMe" class="remember-me-checkbox">
+            <label for="rememberMe" class="remember-me-label">Remember me</label>
+        </div>
+        <div class="urniv">
+            <button class="cancel-button" type="button">Cancel</button>
+            <p class="forgot-password">Forgot password?</p>
+          </div>
+       
+
+        
+        
+    </div>
+</body>
+</html>

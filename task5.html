@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+        background-color: lightblue;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      td input[type="text"],
+      td input[type="email"],
+      td input[type="password"],
+      td input[type="tel"],
+      td select,
+      td label {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* Make the Address cell 3 times taller */
+      td[name="addressCell"] input[type="text"] {
+        height: 5em; /* Adjust this value as needed */
+      }
+
+      .login {
+        text-align: right;
+      }
+
+      .reg {
+        color: blue;
+        text-align: center;
+      }
+    </style>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <table>
+      <h1>Task 5</h1>
+      <h2 class="reg">Registration Form</h2>
+      <tr>
+        <th>First Name</th>
+        <td><input type="text" name="firstName" /></td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td><input type="text" name="lastName" /></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><input type="email" name="email" /></td>
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td><input type="password" name="password" /></td>
+      </tr>
+      <tr>
+        <th>Re-enter Password</th>
+        <td><input type="password" name="repassword" /></td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>
+          <label><input type="radio" id="male" name="gender" />Male</label
+          ><br />
+          <label><input type="radio" id="female" name="gender" /> Female</label>
+        </td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td><input type="text" name="age" /></td>
+      </tr>
+      <tr>
+        <th>Phone Number</th>
+        <td><input type="tel" name="phone" /></td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td name="addressCell"><input type="text" name="address" /></td>
+      </tr>
+      <tr>
+        <th>State</th>
+        <td><input type="text" name="state" /></td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td>
+          <select name="country" id="country">
+            <option>choose your country</option>
+            <option value="India">India</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Afhanistan">Afghanistan</option>
+            <option value="Tibet">Tibet</option>
+            <option value="China">China</option>
+            <option value="Pakistan">Pakistan</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Languages known</th>
+        <td>
+          <label for="english">English</label>
+          <input type="checkbox" id="english" />
+          <label for="kannada">Kannada</label>
+          <input type="checkbox" id="kannada" />
+          <label for="hindi">Hindi</label>
+          <input type="checkbox" id="Hindi" />
+          <label for="telugu">Telugu</label>
+          <input type="checkbox" id="telugu" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="declare"
+            >Hereby I declare all the details given are true</label
+          >
+          <input type="checkbox" id="declare" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="login">
+          Log in to <a href="https://ethnus.com/">Ethnus</a> website
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

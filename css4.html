@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Navigation</title>
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+        background-color: lightblue;
+      }
+      h2 {
+        padding-top: 50px;
+        padding-left: 100px;
+      }
+      h6 {
+        padding-left: 100px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 100px;
+      }
+
+      .sidenav a {
+        border-radius: 0px 10px 10px 0px;
+        padding-top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        margin: 10px 0;
+        transition: width 0.3s; /* Add this transition for the button width */
+      }
+
+      /* Red button */
+      .sidenav .green {
+        background-color: green;
+      }
+
+      /* Black button */
+      .sidenav .blue {
+        background-color: blue;
+      }
+
+      /* Yellow button */
+      .sidenav .red {
+        background-color: red;
+      }
+
+      .sidenav .gray {
+        background-color: gray;
+      }
+
+      /* Expand the button on hover */
+      .sidenav a:hover {
+        width: 70px;
+      }
+
+      /* Reset the button width when not hovered */
+      .sidenav a:not(:hover) {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS TASK4</h1>
+    <div class="sidenav">
+      <a class="green" href="#"></a>
+      <a class="blue" href="#"></a>
+      <a class="red" href="#"></a>
+      <a class="gray" href="#"></a>
+    </div>
+    <h2>Hoverable sidenav buttons</h2>
+    <h6>Hover over the buttons on left side to open them</h6>
+  </body>
+</html>
